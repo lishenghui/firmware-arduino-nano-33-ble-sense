@@ -45,6 +45,11 @@ void setup() {
 
     // init all sensors and device itself
     ei_main_init();
+
+    /* (HERE) Power on the sensors */
+    pinMode(2, OUTPUT); // Added
+    digitalWrite(2, HIGH); // Added
+    delay(100); // Added
 }
 
 void loop() {
